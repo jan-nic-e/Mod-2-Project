@@ -266,17 +266,6 @@ input {
     padding-inline: 2px;
 }
 
-input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
-}
-
-input[type="text" i] {
-    padding-block: 1px;
-    padding-inline: 2px;
-}
-
-input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
-}
-
 .header__email--btn {
     z-index: 2;
     margin: 8px;
@@ -719,6 +708,10 @@ img {
 
 .plan:nth-child(2) .plan__name, .plan:nth-child(2) .plan__price, .plan:nth-child(2) .plan__target, .plan:nth-child(2) .plan__duration, .plan:nth-child(2) .plan__feature {
     color: #f7fafc;
+}
+
+.plan:nth-child(odd) .plan__duration {
+    color: #a0aec0;
 }
 
 .plan__button {
@@ -1202,6 +1195,11 @@ body {
         width: 16px;
         height: 16px;
     }
+        h1 {
+        font-size: 36px;
+        color: #1a202c;
+        line-height: 1.25;
+    }
 }
 
 
@@ -1287,13 +1285,6 @@ body {
         width: 100%;
         max-width: 512px;
     }
-        .start__buttons {
-        width: auto;
-        margin-top: 24px;
-    }
-        .start__button {
-        padding: 16px 32px;
-    }
         footer {
         padding: 80px 32px;
     }
@@ -1310,6 +1301,12 @@ body {
     }
     .start__button {
         padding: 16px 32px;
+    }
+    .section__title {
+        font-size: 36px;
+    }
+        h1 {
+        font-size: 30px;
     }
 }
 
@@ -1375,6 +1372,14 @@ body {
     }
         .footer__column {
         width: calc(100% / 3);
+    }
+        .step {
+        flex-direction: column;
+        align-items: center;
+    }
+    .step__description {
+        margin-top: 12px;
+        margin-left: 0;
     }
 }
 
@@ -1473,5 +1478,32 @@ body {
     }
         .start__button:nth-child(1) {
         margin-right: 0;
+    }
+    .start__button:nth-child(2) {
+        margin-top: 16px;
+    }
+    .testimonial__bottom {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 4px;
+    }
+        .testimonial__profile {
+        flex-direction: column;
+        align-items: center;
+    }
+        .testimonial__buttons {
+        margin-top: 32px;
+    }
+        .testimonial__para {
+        margin-bottom: 32px;
+    }
+        #steps .section__title {
+        margin: 16px 0 0 0;
+    }
+        .section__title {
+        font-size: 30px;
+    }
+        .section__title {
+        line-height: 1.25;
     }
 }
