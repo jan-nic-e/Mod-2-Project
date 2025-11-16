@@ -1198,6 +1198,10 @@ body {
         .testimonials__description {
         width: calc(100% - 40%);
     }
+    .testimonial__button svg {
+        width: 16px;
+        height: 16px;
+    }
 }
 
 
@@ -1293,6 +1297,20 @@ body {
         footer {
         padding: 80px 32px;
     }
+        .values__list {
+        max-width: 20rem;
+        flex-direction: column;
+    }
+        .value {
+        margin-top: 2.5rem;
+    }
+    .start__buttons {
+        width: auto;
+        margin-top: 24px;
+    }
+    .start__button {
+        padding: 16px 32px;
+    }
 }
 
 
@@ -1344,6 +1362,20 @@ body {
         .footer__social--link:first-child {
         margin-left: 0px;
     }
+        .values__list {
+        margin-left: auto;
+        margin-right: auto;
+    }
+        .value:nth-of-type(1) {
+        margin-right: 0px;
+    }
+        .value {
+        margin-right: 0px;
+        align-items: center;
+    }
+        .footer__column {
+        width: calc(100% / 3);
+    }
 }
 
 
@@ -1365,19 +1397,19 @@ body {
         flex-direction: column;
         height: auto;
     }
-        
-    .header__email--input {
-        position: static;
-        padding: 16px 0;
-        padding-left: 32px;
-        line-height: 1.5;
-    }
 
     .header__email--btn {
         width: 100%;
         padding: 16px 0;
         margin: 16px 0;
         margin-bottom: 0px;
+        line-height: 1.5;
+    }
+
+     .header__email--input {
+        position: static;
+        padding: 16px 0;
+        padding-left: 32px;
         line-height: 1.5;
     }
 
@@ -1417,10 +1449,29 @@ body {
         .footer__columns {
         justify-content: center;
     }
+        .footer__column {
+        width: auto;
+        padding: 0 16px;
+        text-align: center;
+        align-items: center;
+    }
 
         .footer__copyright {
         font-size: 14px;
         text-align: center;
         line-height: 1.5;
+    }
+        .btn {
+        line-height: 1.5;
+    }
+        .start__buttons {
+        flex-direction: column;
+    }
+        .start__button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+        .start__button:nth-child(1) {
+        margin-right: 0;
     }
 }
